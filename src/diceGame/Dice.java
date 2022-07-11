@@ -15,7 +15,7 @@ public class Dice {
      *
      * @return la valeur du dé
      */
-    public int get_valeur() {
+    public int getValeur() {
         return this.valeur;
     }
 
@@ -23,6 +23,6 @@ public class Dice {
      *
      */
     public void lancer() {
-        this.valeur = (int) Math.ceil(Math.random()*6);
+        this.valeur = (int) (Math.random() * 6) + 1;
     }
 }

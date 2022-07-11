@@ -6,13 +6,13 @@ public class Gobelet {
     private Dice[] des; //tableau de dés
 
     //constructeur
-    public Gobelet(int nb_des) {
+    public Gobelet(int nbDes) {
         this.valeur = 0;
-        this.des = new Dice[nb_des];
+        this.des = new Dice[nbDes];
     }
 
     //getter
-    public int get_valeur() {
+    public int getValeur() {
         return this.valeur;
     }
 
@@ -26,17 +26,17 @@ public class Gobelet {
         for (Dice de : des) {
             de = new Dice();
             de.lancer();
-            sommeDes += de.get_valeur();
+            sommeDes += de.getValeur();
         }
         this.valeur = sommeDes;
     }
 
-    public void afficher_score() {
+    public void afficherScore() {
         if (this.valeur == 0) {
             System.out.println("Vous n'avez pas fait de lancés");
         }
         else {
-            System.out.println("Votre score est " + this.get_valeur());
+            System.out.println("Score du lancé : " + this.getValeur());
         }
     }
 }
