@@ -4,7 +4,7 @@ import diceGame.Partie;
 
 public class Main {
     public static void main(String[] args) {
-        Partie partie1 = new Partie(4, 3); //Changer les arguments pour le nombre de tours et le nombre de dés
+        Partie partie1 = new Partie(3, 4); //Changer les arguments pour le nombre de tours et le nombre de dés
         partie1.initialiser();
         partie1.lancer();
     }
