@@ -27,7 +27,6 @@ public class Joueur {
             this.score = gobelet.getValeur();
         }
     }
-
     public void afficherScore () {
         if (this.score == 0) {
             System.out.println("Vous n'avez pas fait de lances");

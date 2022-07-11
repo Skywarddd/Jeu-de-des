@@ -33,6 +33,11 @@ public class Partie {
         }
     }
 
+    /**Méthode pour lancer une partie
+     * A chaque tour, fait jouer le joueur de chaque case du tableau joueurs
+     * Si le score qu'un joueur fait est supérieur au meilleur score qui a été réalisé (bestScore) depuis le début de la partie, celui-ci est mis à jour
+     *Affiche les résultats avec la méthode afficherGagnant
+     */
     public void lancer() {
         int bestScore = 0;
         for (int i = 0; i < this.nbTours; ++i) {
@@ -50,6 +55,10 @@ public class Partie {
         afficherGagnant(bestScore);
     }
 
+    /** Affiche le ou les gagnants ayany obtenu le meilleur score
+     * Compare chaque case du tableau au score et ajoute le nom du joueur dans une liste si les scores sont égaux
+     * @param score Meilleur score de la méthode lancer()
+     */
     public void afficherGagnant (int score) {
         ArrayList<String> winningPlayers = new ArrayList<>();
         for (Joueur joueur : this.joueurs) {
