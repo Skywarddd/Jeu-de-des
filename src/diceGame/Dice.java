@@ -2,11 +2,11 @@ package diceGame;
 
 public class Dice {
     //attribut valeur du dé
-    private int value;
+    private int valeur;
 
     //constructeur
     public Dice () {
-        this.value = 0;
+        this.valeur = 0;
     }
 
     //méthodes
@@ -16,13 +16,13 @@ public class Dice {
      * @return la valeur du dé
      */
     public int get_valeur() {
-        return this.value;
+        return this.valeur;
     }
 
     /** Setter de la valeur du dé
      *
      */
     public void lancer() {
-        this.value = (int) Math.ceil(Math.random()*6);
+        this.valeur = (int) Math.ceil(Math.random()*6);
     }
 }
