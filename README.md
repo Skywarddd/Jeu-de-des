@@ -1,10 +1,10 @@
 # Jeu-de-des
-Créer un jeu de dés classique dans lequel des joueurs joueront àtour de rôle enlançant un gobelet, qui contiendra des dés. Au bout d'un certain nombre de tour, On désigne le gagnant.
+Créer un jeu de dés classique dans lequel des joueurs joueront à tour de rôle en lançant un gobelet, qui contiendra des dés. Au bout d'un certain nombre de tour, on désigne le gagnant.
 
 ## Contenu des classes dans diceGame 
 
 ### Dice
-La classe Dice est celle qui représente un Dé du gobelet. Celle-ci a:
+La classe Dice est celle qui représente un dé du gobelet. Celle-ci a:
 - Un attribut :
   - **valeur**: un nombre représentant la valeur d'un lancer de dé
 - Un constructeur:
